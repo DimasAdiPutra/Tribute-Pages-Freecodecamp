@@ -24,11 +24,11 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 200vh;
+  padding: 30px;
 }
 
 #title {
-  margin: 30px;
+  margin-bottom: 30px;
   font-family: 'Grechen Fuemen', cursive, serif;
   font-size: 4em;
 }
@@ -57,7 +57,7 @@ body {
 #headline::after {
   content: "";
   display: block;
-  width: 80%;
+  width: 70%;
   height: 1px;
   margin: 10px auto;
   background-color: rgb(40, 40, 40);
@@ -66,9 +66,39 @@ body {
 
 #tribute-info {
   margin-top: 40px;
+  width: 90%;
+  max-width: 800px;
 }
 
-/* tab */
+#tribute-info ul {
+  text-align: justify;
+  margin-top: 60px;
+}
+
+#tribute-info ul li {
+  margin-bottom: 30px;
+}
+
+blockquote {
+  text-align: left;
+  width: 90%;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+blockquote p {
+  margin: 20px 0;
+}
+
+footer h3 {
+  margin-top: 30px;
+}
+
+#tribute-link {
+  color: lightskyblue;
+}
+
+/* mobile responsive */
 @media screen and (max-width: 576px) {
   body {
     font-size: 12px;
