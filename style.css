@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6em;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  color: rgb(40, 40, 40);
+}
+
+#main {
+  width: 98%;
+  background-color: rgb(230, 230, 230);
+  border-radius: 10px;
+  text-align: center;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 200vh;
+}
+
+#title {
+  margin: 30px;
+  font-family: 'Grechen Fuemen', cursive, serif;
+  font-size: 4em;
+}
+
+#img-div {
+  width: 95vw;
+  background-color: #fff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#image {
+  width: 100%;
+  max-width: 1024px;
+  filter: grayscale(1);
+}
+
+#img-caption {
+  margin-top: 20px;
+  width: 80%;
+}
+
+/* info */
+#headline::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 1px;
+  margin: 10px auto;
+  background-color: rgb(40, 40, 40);
+  border-radius: 10px;
+}
+
+#tribute-info {
+  margin-top: 40px;
+}
+
+/* tab */
+@media screen and (max-width: 576px) {
+  body {
+    font-size: 12px;
+  }
+
+  #main {
+    width: 100%;
+    border-radius: 0;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  #headline::after {
+    display: none;
+  }
+}
